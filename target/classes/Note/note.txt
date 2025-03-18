@@ -1,0 +1,10 @@
+1st-->  Add two dependencies -> Spring Core and Spring Context
+
+
+2nd --> Create an entity and app.java file
+
+3rd --> Create an xml file .
+
+4rth --> add spring bean xsd file in applicationCOntext.xml file.
+
+
