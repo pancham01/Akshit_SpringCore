@@ -7,6 +7,7 @@ public class Address {
 
 	public Address() {
 		super();
+		System.out.println("Address.Address(0)");
 		// TODO Auto-generated constructor stub
 	}
 
@@ -14,6 +15,7 @@ public class Address {
 		super();
 		this.city = city;
 		this.state = state;
+		System.out.println("Address.Address(2)");
 	}
 
 	public String getCity() {
