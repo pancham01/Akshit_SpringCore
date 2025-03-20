@@ -9,12 +9,9 @@ public class Client {
 
 	public static void main(String[] args) {
 		ApplicationContext ioc = new ClassPathXmlApplicationContext("applicationContext.xml");
-		Employee emp = ioc.getBean("emp2",Employee.class);
+		Employee emp = ioc.getBean("emp",Employee.class);
 		System.out.println(emp);
 		
-		
-//		Employee bean2 = ioc.getBean("emp2",Employee.class);
-//		System.out.println(bean2);
 	}
 
 }
