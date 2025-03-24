@@ -12,10 +12,17 @@
 		<property name="state" value="UP" />
 	</bean>
 
-	<bean name="emp" class="com.springcore.model.Employee" autowire="constructor">
-		<constructor-arg name="id" value="111" />
-		<constructor-arg name="name" value="Guest" />
-		<constructor-arg name="gender" value="Male" />
+	<bean name="emp" class="com.springcore.model.Employee"
+		scope="prototype">
+		<property name="id" value="111" />
+		<property name="name" value="Guest" />
+		<property name="gender" value="Male" />
+		<property name="address">
+			<bean class="com.springcore.model.Address">
+				<property name="city" value="Lucknow" />
+				<property name="state" value="UP" />
+			</bean>
+		</property>
 	</bean>
 
 
